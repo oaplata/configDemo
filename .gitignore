@@ -37,7 +37,7 @@ yarn-error.log
 
 # BUCK
 buck-out/
-\.buckd/
+/.buckd/
 *.keystore
 !debug.keystore
 
@@ -57,3 +57,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+!ios/Pods/RMQClient/RMQClient/RMQValues.h
+!ios/Pods/JKVValue/JKVValue/Public/JKVValue.h
+!ios/Pods/RMQClient/RMQClient/RMQTCPSocketTransport.h
