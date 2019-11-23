@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'configDemo' do
@@ -45,6 +45,9 @@ target 'configDemo' do
   pod 'react-native-google-maps', :path => rn_maps_path
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
+
+  pod 'react-native-rabbitmq', :path => '../node_modules/react-native-rabbitmq'
+  pod 'RMQClient', :git => 'https://github.com/rabbitmq/rabbitmq-objc-client.git'
 
   target 'configDemoTests' do
     inherit! :search_paths
